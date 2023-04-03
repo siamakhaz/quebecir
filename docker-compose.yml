@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  goodquote:
+    # Build our image
+    build: .
+    container_name: quebecir-daily
+    volumes:
+    - ./:/app
+    restart: always
+
